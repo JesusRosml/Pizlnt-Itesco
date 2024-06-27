@@ -25,4 +25,6 @@
     </style>
 
     <style name="AppThemeBase" parent="Base.AppTheme" />
+
+    <!-- <style name="AppTheme" parent="Base.AppTheme" /> -->
 </resources>

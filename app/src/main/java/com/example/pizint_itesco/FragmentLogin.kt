@@ -15,6 +15,7 @@ import com.google.android.material.snackbar.Snackbar
 import android.content.Context
 import android.content.Intent
 import android.view.inputmethod.InputMethodManager
+import androidx.navigation.fragment.findNavController
 
 import com.android.volley.Request
 import com.android.volley.Response
@@ -112,7 +113,7 @@ class FragmentLogin : Fragment() {
         }
 
         val queue = Volley.newRequestQueue(context)
-        val url = "https://d641-187-188-26-224.ngrok-free.app/login"
+        val url = BuildConfig.API_URL + "/login"
 
         val responseServer = CustomJsonObjectRequest(Request.Method.POST, url, credentialUser,
             { response ->
@@ -176,7 +177,7 @@ class FragmentLogin : Fragment() {
     }
 
     private fun openFragmentRegister() {
-        Log.d("LoginFragment", "Fragment de registro de usuario abierto")
+        findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
     }
 
     override fun onDestroyView() {

@@ -20,10 +20,15 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
+            buildConfigField("String", "API_URL", "\"${project.properties["MY_API_URL"]}\"")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+        }
+        debug {
+            isMinifyEnabled = false
+            buildConfigField("String", "API_URL", "\"${project.properties["MY_API_URL"]}\"")
         }
     }
     compileOptions {
@@ -35,6 +40,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 }
 
@@ -54,4 +60,5 @@ dependencies {
 
     implementation("com.android.volley:volley:1.2.1")
     implementation("com.google.android.material:material:1.13.0-alpha03")
+    implementation("com.google.android.flexbox:flexbox:3.0.0")
 }

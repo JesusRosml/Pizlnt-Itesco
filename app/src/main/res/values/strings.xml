@@ -42,4 +42,14 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    
+    <string name="titleNewAccount">Crear nueva cuenta</string>
+    <string name="descriptionNewAccount">Por favor rellene el formulario para continuar</string>
+    <string name="placeholderName">Nombre</string>
+    <string name="placeholderSurname">Primer apellido</string>
+    <string name="placeholderSecondSurname">Segundo apellido</string>
+    <string name="placeholderEmail">Correo electrónico</string>
+    <string name="placeholderPassword">Contraseña</string>
+    <string name="placeholderConfirmPass">Confirmar contraseña</string>
+    <string name="titlePublication">Crear publicación</string>
 </resources>
